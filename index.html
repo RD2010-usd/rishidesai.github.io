@@ -3,12 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rishi Desai's Website</title>
+  <title>Rishi Desai</title>
   <style>
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+      background: linear-gradient(135deg, #89f7fe, #66a6ff);
       color: #333;
       display: flex;
       flex-direction: column;
@@ -24,6 +35,7 @@
       max-width: 700px;
       width: 100%;
       text-align: center;
+      animation: fadeInUp 0.8s ease-out;
     }
 
     img {
@@ -39,7 +51,7 @@
     }
 
     p {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       line-height: 1.6;
     }
 
@@ -58,20 +70,48 @@
       font-size: 1rem;
       color: #01579b;
     }
+
+    .buttons {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      background-color: #00bcd4;
+      color: white;
+      transition: background-color 0.3s;
+    }
+
+    .buttons a:hover {
+      background-color: #0097a7;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <img src="my photo.jpg" alt="Rishi Desai's Photo">
+    <img src="my photo.jpg" alt="Rishi Desai">
     <h1>Hi, I'm Rishi Desai</h1>
     <p>Welcome to my personal website hosted with GitHub Pages!</p>
-    <p>I'm a student who loves sports, tech, and having fun. Whether I'm spiking volleyballs, playing video games, or shooting hoops on the court — I'm always up for a challenge. I'm also a big fan of Justin Fields!</p>
+    <p>I’m a student who loves sports, tech, and having fun. Whether I'm spiking volleyballs, playing video games, or shooting hoops on the court — I'm always up for a challenge. And when it comes to football, I'm all about Justin Fields 🐻⬇️.</p>
 
     <div class="interests">
       <div class="interest">🏐 Volleyball</div>
       <div class="interest">🎮 Video Games</div>
       <div class="interest">🏀 Basketball</div>
       <div class="interest">🏈 Justin Fields</div>
+    </div>
+
+    <div class="buttons">
+      <a href="resume.pdf" download>📄 Download Resume</a>
+      <a href="https://github.com/RD2010-usd" target="_blank">💻 GitHub</a>
+      <a href="https://www.snapchat.com/add/rishid243684" target="_blank">👻 Snapchat</a>
+      <a href="mailto:rishidesai2010@gmail.com">✉️ Email Me</a>
     </div>
   </div>
 </body>
